@@ -1,0 +1,44 @@
+<dom-module id="social-bar">
+  <link rel="import" href="../polymer/polymer.html">
+  <link rel="import" href="social-bar-styles.html">
+  <link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+  <link rel="import" href="../iron-flex-layout/classes/iron-flex-layout.html">
+  <link rel="import" href="../paper-fab/paper-fab.html">
+  <template>
+    <style type="text/css" is="custom-style" include="social-bar-styles"></style>
+    <style>:host { display: block; }</style>
+    <!-- flex horizontal divs container -->
+    <div class="layout horizontal wrap social">
+      <!-- flex element 
+      <div class="flex">
+
+      </div>
+      -->
+      <!-- fabs -->
+      <!-- face -->
+      <div class="flex boton">
+        <paper-fab class="bs" src="http://cdn.flaticon.com/svg/33/33702.svg"></paper-fab>
+      </div>
+      <!-- twitter -->
+      <div class="flex boton">
+        <paper-fab class="bs" src="http://cdn.flaticon.com/svg/34/34238.svg"></paper-fab>
+      </div>
+      <!-- youtube -->
+      <div class="flex boton">
+        <paper-fab class="bs" src="http://cdn.flaticon.com/svg/33/33671.svg"></paper-fab>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'social-bar',
+      ready: function(){
+        console.log("social-bar ready!");
+      }
+    });
+  </script>
+
+</dom-module>
+
+ 

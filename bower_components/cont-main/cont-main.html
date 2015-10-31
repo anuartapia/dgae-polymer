@@ -1,0 +1,137 @@
+<dom-module id="cont-main">
+  <link rel="import" href="../polymer/polymer.html">
+  <link rel="import" href="cont-main-styles.html">
+  <link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+  <link rel="import" href="../iron-flex-layout/classes/iron-flex-layout.html">
+  <link rel="import" href="../iron-image/iron-image.html">
+  <template>
+    <style type="text/css" is="custom-style" include="cont-main-styles"></style>
+    <style>:host { display: block; }</style>
+    
+    <div class="contenido"> 
+      <h1>Bienvenid@ a la DGAE</h1>
+      <p class="main">
+        La Secretaría General a través de la Dirección General de Administración Escolar, te ofrece toda la información administrativo-escolar de la UNAM.
+      </p>
+      <!-- flex vertical divs container -->
+      <div class="layout vertical wrap">
+
+        <hr width="100%" size="1" color="#0d47a1">
+
+        <!-- flex horizontal divs container -->
+        <div class="layout horizontal wrap">
+          <!-- flex element -->
+          <div class="flex">
+            <iron-image class="sized" sizing="cover"  src="../../images/convocatoria_nov.png"></iron-image>
+          </div>
+          <!-- flex element -->
+          <div class="flex left">
+            <h2>
+              Convocatoria
+            </h2>
+            <p>
+              Convocatoria Concurso Ingreso a Licenciatura SUAyED Noviembre 2015
+            </p>
+          </div> 
+        </div> <!-- horizontal -->
+
+        <hr width="100%" size="1" color="#0d47a1">
+
+        <!-- flex horizontal divs container -->
+        <div class="layout horizontal wrap">
+          <!-- flex element -->
+          <div class="flex right">
+            <h2>
+              Folleto: ¿Cómo ingreso a la UNAM?
+            </h2>
+            <p>
+              El propósito de este material es:
+              informar, orientar y guiar
+              tanto a los aspirantes, como a los padres
+              y docentes durante el proceso de toma
+              de decisión para el ingreso a Bachillerato,
+              Licenciatura y Posgrado.
+            </p>
+          </div>
+          <!-- flex element -->
+          <div class="flex">
+            <iron-image class="sized" sizing="cover"  src="../../images/ingreso_lic.png"></iron-image>
+          </div> 
+        </div> <!-- horizontal -->
+
+
+        <hr width="100%" size="1" color="#0d47a1">
+
+        <!-- flex horizontal divs container -->
+        <div class="layout horizontal wrap">
+          <!-- flex element -->
+          <div class="flex">
+            <iron-image class="sized" sizing="cover"  src="../../images/ingreso_bach.png"></iron-image>
+          </div> 
+          <!-- flex element -->
+          <div class="flex left">
+            <h2>
+              Folleto: ¿Cómo ingreso al bachillerato UNAM?
+            </h2>
+            <p>
+              El propósito de este material es:
+              informar, orientar y guiar
+              tanto a los aspirantes, como a los padres
+              y docentes durante el proceso de toma de
+              decisión para el ingreso a Bachillerato.
+            </p>
+          </div>
+        </div> <!-- horizontal -->
+
+         <hr width="100%" size="1" color="#0d47a1">
+
+        <!-- flex horizontal divs container -->
+        <div class="layout horizontal wrap">
+          <!-- flex element -->
+          <div class="flex right">
+            <h2>
+              Otras opciones
+            </h2>
+            <p>
+              Como respuesta a la solicitud de jóvenes y padres de familia que buscan un espacio de educación superior en la Zona Metropolitana del Valle de México, surge de distintas instituciones la iniciativa: "Un lugar para ti".
+            </p>
+          </div>
+          <!-- flex element -->
+          <div class="flex">
+            <iron-image class="sized" sizing="cover"  src="../../images/unlugarparati.jpg"></iron-image>
+          </div> 
+        </div> <!-- horizontal -->
+
+        <hr width="100%" size="1" color="#0d47a1">
+
+        <!-- flex horizontal divs container -->
+        <div class="layout horizontal wrap">
+          <!-- flex element -->
+          <div class="flex">
+            <iron-image class="sized" sizing="cover"  src="../../images/feria.png"></iron-image>
+          </div> 
+          <!-- flex element -->
+          <div class="flex left">
+            <h2>
+              Feria de útiles escolares
+            </h2>
+            <p>
+              En un espacio de 2,200 metros cuadrados, los visitantes encontrarán las marcas más prestigiadas en útiles escolares, equipos de cómputo y software a precios preferenciales.
+              En los cuatro días de exposición se llevarán a cabo conferencias, talleres y charlas sobre temas relacionados con la aplicación y desarrollo de las tecnologías de la información y comunicación.
+            </p>
+          </div>
+        </div> <!-- horizontal -->
+      </div> <!-- vertical -->
+    </div> <!-- contenido -->
+  </template>
+
+  <script>
+    Polymer({
+      is: 'cont-main',
+      ready: function(){
+        console.log("cont-main ready!");
+      }
+    });
+  </script>
+</dom-module>
+
